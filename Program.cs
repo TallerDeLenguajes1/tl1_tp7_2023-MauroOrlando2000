@@ -23,7 +23,7 @@ nuevo.Limpiar();
 nuevo.Sumar(num);
 while(!anda)
 {
-    Console.WriteLine("Que desea hacer con este número?\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir");
+    Console.WriteLine("Que desea hacer con el número: " + nuevo.Resultado + "?\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir");
     while(!anda || menu <= 0 || menu > 4)
     {
         stringNum = Console.ReadLine();
