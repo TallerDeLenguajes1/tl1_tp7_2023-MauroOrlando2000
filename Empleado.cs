@@ -86,7 +86,7 @@ public class Empleado{
         return jubilacion;
     }
 
-    public void salario(double sueldo, DateTime antiguedad, cargos Cargo, char estado)
+    public double salario(double sueldo, DateTime antiguedad, cargos Cargo, char estado)
     {
         double salario;
         if(antiguedad.Year < 20)
@@ -106,6 +106,6 @@ public class Empleado{
             salario += 15000;
         }
         salario += sueldo;
-        Console.WriteLine($"El salario es de {salario}");
+        return salario;
     }
 }
